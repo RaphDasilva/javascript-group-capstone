@@ -1,0 +1,43 @@
+{
+  "name": "webpack",
+  "version": "1.0.0",
+  "description": "<a name=\"readme-top\"></a>",
+  "private": true,
+  "scripts": {
+    "test": "jest",
+    "start": "webpack serve --open",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaphDasilva/javascript-group-capstone.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RaphDasilva/javascript-group-capstone/issues"
+  },
+  "homepage": "https://github.com/RaphDasilva/javascript-group-capstone#readme",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.2.1",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.1.0",
+    "css-loader": "^6.7.3",
+    "eslint": "^7.32.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.27.5",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^21.0.0",
+    "stylelint-csstree-validator": "^1.9.0",
+    "stylelint-scss": "^3.21.0",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "main": "webpack.config.js"
+}
