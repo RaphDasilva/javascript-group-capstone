@@ -1,2 +1,2 @@
 import './style.css';
-import large_Jung from './large_Jung.jpg';
+// import largeJung from './large_Jung.jpg';
