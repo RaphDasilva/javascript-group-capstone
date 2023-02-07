@@ -12,7 +12,7 @@ const showMovies = async () => {
                     <p>${element.name}</p>
                     <span><i data-id="${element.id}" class="fa-regular fa-heart like-icon"></i> 5 likes</span>
                 </div>
-                <button id = ${element.id}>Comments</button>
+                <button class="" id = ${element.id}>Comments</button>
             </li>
      `;
   });
