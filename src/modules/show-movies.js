@@ -1,5 +1,5 @@
-import movieContainer from './project-const';
-import createMovies from './display-movies';
+import movieContainer from './project-const.js';
+import createMovies from './display-movies.js';
 
 const showMovies = async () => {
   movieContainer.innerHTML = '';
