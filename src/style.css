@@ -45,7 +45,7 @@ li {
   gap: 10px;
   align-items: center;
   justify-content: center;
-  background-color: tomato;
+  background-color: var(--milk-color);
   padding: 20px;
   width: 300px;
   height: 550px;
