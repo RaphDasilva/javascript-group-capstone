@@ -6,7 +6,6 @@ module.exports = {
   entry: './src/index.js',
   devServer: {
     static: './dist',
-    watchFiles: ['src/index.html/index.js'],
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -14,10 +13,8 @@ module.exports = {
     }),
   ],
   output: {
-    filename: '[name].bundle.js',
+    filename: 'main.js',
     path: path.resolve(__dirname, 'dist'),
-    clean: true,
-    publicPath: './',
   },
   module: {
     rules: [
@@ -25,14 +22,7 @@ module.exports = {
         test: /\.css$/i,
         use: ['style-loader', 'css-loader'],
       },
-      {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
-      },
     ],
   },
-  optimization: {
-    runtimeChunk: 'single',
-  },
-  mode: 'development',
-};
+  mode: 'none',
+}
