@@ -8,7 +8,7 @@ const createAPI = async () => {
       'Content-type': 'application/json; charset=UTF-8',
     },
   });
-  return console.log(response.json());
+  return response.json();
 };
 
 export default createAPI;

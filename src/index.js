@@ -1,7 +1,7 @@
 import './style.css';
 import showMovies from './modules/show-movies.js';
-import showLike from './modules/showLike';
-import AddLike from './modules/add-like';
+import showLike from './modules/showLike.js';
+import AddLike from './modules/add-like.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
   await showMovies();
