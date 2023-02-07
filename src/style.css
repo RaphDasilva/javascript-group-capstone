@@ -72,3 +72,12 @@ footer {
   padding: 20px;
   margin-top: 20px;
 }
+.likes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--black);
+}
