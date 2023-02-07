@@ -1,2 +1,7 @@
 import './style.css';
-// import largeJung from './large_Jung.jpg';
+import showMovies from './modules/show-movies';
+
+window.addEventListener('load', async () => {
+  await showMovies();
+  console.log(showMovies());
+});
