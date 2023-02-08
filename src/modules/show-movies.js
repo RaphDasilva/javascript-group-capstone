@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { movieContainer, displayButtons } from './project-const.js';
+import { movieContainer, displayButtons,} from './project-const.js';
 import createMovies from './display-movies.js';
 import showPopup from './popup.js';
 
@@ -8,7 +8,7 @@ const showMovies = async () => {
   const movieArr = await createMovies();
   movieArr.forEach((element) => {
     movieContainer.innerHTML += `
-     <li class = "movie-${element.id}">
+     <li class = "movie-${element.id} each-movie">
                 <img src="${element.img}" alt="${element.name}" width="200px">
                 <div>
                     <p class="movie-name">${element.name}</p>
