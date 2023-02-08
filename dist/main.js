@@ -350,7 +350,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_noSourceMaps_js__WEBPACK_IMPORTED_MODULE_0___default()));
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, ":root {\n  --ash-color: #8d99ae;\n  --black: #2b2d42;\n  --milk-color: #edf2f4;\n  --red: #ef233c;\n}\n\n* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;\n}\n\nheader {\n  display: flex;\n  justify-content: space-evenly;\n  gap: 50px;\n  align-items: center;\n  background-color: var(--ash-color);\n  color: var(--black);\n  padding: 20px;\n}\n\nul {\n  display: flex;\n  justify-content: center;\n  gap: 20px;\n  align-items: center;\n  margin-top: 50px;\n  list-style: none;\n}\n\nli {\n  display: flex;\n  flex-direction: column;\n  gap: 10px;\n  align-items: center;\n  justify-content: center;\n}\n\nfooter {\n  background-color: var(--black);\n  color: var(--milk-color);\n  text-align: center;\n  padding: 20px;\n  margin-top: 20px;\n  position: absolute;\n  bottom: 0;\n  left: 0;\n  right: 0;\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, ":root {\r\n  --ash-color: #8d99ae;\r\n  --black: #2b2d42;\r\n  --milk-color: #edf2f4;\r\n  --red: #ef233c;\r\n}\r\n\r\n* {\r\n  margin: 0;\r\n  padding: 0;\r\n  box-sizing: border-box;\r\n  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;\r\n}\r\n\r\nheader {\r\n  display: flex;\r\n  justify-content: space-evenly;\r\n  gap: 50px;\r\n  align-items: center;\r\n  background-color: var(--ash-color);\r\n  color: var(--black);\r\n  padding: 20px;\r\n}\r\nmain{\r\n  position: relative;\r\n}\r\nul.container {\r\n  display: flex;\r\n  justify-content: center;\r\n  align-items: center;\r\n  flex-wrap: wrap;\r\n  width: 80%;\r\n  gap: 20px;\r\n  align-items: center;\r\n  margin-top: 50px;\r\n  list-style: none;\r\n  margin: auto;\r\n  margin-top: 20px;\r\n}\r\nimg{\r\n    width: 100%;\r\n    height: 400px;\r\n}\r\n.container li {\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 10px;\r\n  align-items: center;\r\n  justify-content: center;\r\n  background-color: var(--red);\r\n  padding: 20px;\r\n}\r\n\r\nfooter {\r\n  background-color: var(--black);\r\n  color: var(--milk-color);\r\n  text-align: center;\r\n  padding: 20px;\r\n  margin-top: 20px;\r\n}\r\n\r\n\r\n/* POP-UP CSS */\r\n.popup-section{\r\n  display: flex;\r\n  flex-direction: column;\r\n  align-items: center;\r\n  justify-content: center;\r\n  position: absolute;\r\n  left: 10%;\r\n  right: 10%;\r\n  top: 0;\r\n  bottom: 0;\r\n  background-color: white;\r\n  z-index: 2;\r\n}\r\n.close-btn{\r\n  font-weight: 800;\r\n  font-size: 3rem;\r\n  font-family: Arial, Helvetica, sans-serif;\r\n  align-self: flex-end;\r\n  text-align: right;\r\n  right: 20px;\r\n  top: 20px;\r\n  position: absolute;\r\n  cursor: pointer;\r\n}\r\n.movie-image{\r\n  width: 80%;\r\n  margin: auto;\r\n}\r\nul.details{\r\n  display: grid;\r\n  grid-template-columns: auto auto;\r\n  column-gap: 40px;\r\n}\r\n.details li{\r\n  list-style-type: none;\r\n  align-items: center;\r\n  justify-content: center;\r\n  padding: 10px;\r\n}\r\n.comments-list li{\r\n  list-style-type: none;\r\n  padding: 10px;\r\n}\r\nform{\r\n  display: flex;\r\n  flex-direction: column;\r\n  gap: 20px;\r\n}\r\nform *{\r\n  border: 2px solid var(--black)\r\n}\r\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -479,7 +479,7 @@ const showMovies = async () => {
                     <p>${element.name}</p>
                     <span><i data-id="${element.id}" class="fa-regular fa-heart like-icon"></i> 5 likes</span>
                 </div>
-                <button id = ${element.id}>Comments</button>
+                <button class="display-btn" id = ${element.id}>Comments</button>
             </li>
      `;
   });
@@ -542,12 +542,63 @@ __webpack_require__.r(__webpack_exports__);
 const movies = async () => {
   const lists = await fetch('https://api.tvmaze.com/shows');
   const result = await lists.json();
-  const data = result.slice(16, 30);
+  const data = result.slice(16, 18);
   console.log(data);
   return data;
 };
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (movies);
+
+/***/ }),
+/* 15 */
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _project_const__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(12);
+/* harmony import */ var _display_movies__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(13);
+
+
+const displayButton = document.querySelector('.display-btn');
+
+const showPopup = async () => {
+    console.log('run')
+  _project_const__WEBPACK_IMPORTED_MODULE_0__["default"].innerHTML = '';
+  const movieArr = await (0,_display_movies__WEBPACK_IMPORTED_MODULE_1__["default"])();
+  movieArr.forEach((element) => {
+    _project_const__WEBPACK_IMPORTED_MODULE_0__["default"].innerHTML += `
+            <section class="popup-section">
+            <span class="close-btn">X</span>
+            <div class="movie-image">
+            <img src="${element.img}" alt="${element.name}" width="200px">
+            </div>
+            <h2>${element.name}</h2>
+            <ul class="details">
+                <li>Fuel: Titanium</li>
+                <li>Fuel: Titanium</li>
+                <li>Fuel: Titanium</li>
+                <li>Fuel: Titanium</li>
+            </ul>
+            <ul class="comments-list">
+                <h3>Comments(2)</h3>
+                <li>Fuel: Titanium</li>
+                <li>Fuel: Titanium</li>
+            </ul>
+            <h3>Add a comment</h3>
+            <form>
+                <input type="text" name="" id="" placeholder="Your name">
+                <textarea name="" id="" cols="30" rows="10" placeholder="Your Insights"></textarea>
+                <button>Comment</button>
+            </form>
+        </section>
+     `;
+  });
+};
+
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (showPopup);
 
 /***/ })
 /******/ 	]);
@@ -629,9 +680,12 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(1);
 /* harmony import */ var _modules_show_movies__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(11);
+/* harmony import */ var _modules_popup__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(15);
 
 
 
+
+displayButton.addEventListener('click', (0,_modules_popup__WEBPACK_IMPORTED_MODULE_2__["default"])())
 window.addEventListener('load', async () => {
   await (0,_modules_show_movies__WEBPACK_IMPORTED_MODULE_1__["default"])();
   console.log((0,_modules_show_movies__WEBPACK_IMPORTED_MODULE_1__["default"])());
