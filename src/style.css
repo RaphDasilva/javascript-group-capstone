@@ -45,7 +45,7 @@ img {
   gap: 10px;
   align-items: center;
   justify-content: center;
-  background-color: var(--red);
+  background-color: var(--milk-color);
   padding: 20px;
   width: 300px;
   height: 550px;
@@ -59,7 +59,8 @@ img {
 
 button {
   padding: 10px;
-  background-color: var(--milk-color);
+  background-color: var(--black);
+  color: var(--milk-color);
   border: none;
   font-size: 20px;
   border-radius: 8px;
@@ -146,4 +147,14 @@ form * {
   border: 2px solid var(--black);
   padding: 10px;
   margin: 10px 0 0 0;
+}
+
+.likes {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  align-items: center;
+  font-size: 20px;
+  font-weight: 600;
+  color: var(--black);
 }
