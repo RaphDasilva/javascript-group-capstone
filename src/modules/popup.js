@@ -1,5 +1,4 @@
 /* eslint-disable */
-
 import { movieContainer, closeButtons } from './project-const.js';
 import createMovies from './display-movies.js';
 import showMovies from './show-movies.js';
@@ -34,9 +33,9 @@ const showPopup = async (e) => {
         </ul>
         <h3>Add a comment</h3>
         <form>
-            <input type="text" name="" id="" placeholder="Your name">
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Insights"></textarea>
-            <button class="comment-btn">Comment</button>
+            <input type="text" name="name" id="name" class="user-name" placeholder="Your name" value="">
+            <input class="comment-msg" type="text" name="message" id="message" placeholder="Your Insights" height= "200px" value="">
+            <button data-id="${movie.id} class="comment-btn">Comment</button>
         </form>
     </section>
     `;

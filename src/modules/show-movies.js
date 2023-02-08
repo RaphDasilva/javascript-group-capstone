@@ -15,7 +15,8 @@ const showMovies = async () => {
                     <span class = "likes"><i data-id="${element.id}" class="fa-regular fa-thumbs-up like-icon"></i><p data-id = "${element.id}" class = "like-counter"></p></span>
                 </div>
                 <button class="display-btn" 
-                id="${element.id}">Comments</button>
+                id="${element.id}">Comments
+                </button>
             </li>
      `;
   });
