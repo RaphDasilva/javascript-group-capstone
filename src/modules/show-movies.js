@@ -10,7 +10,7 @@ const showMovies = async () => {
                 <img src="${element.img}" alt="${element.name}" width="200px">
                 <div>
                     <p class="movie-name">${element.name}</p>
-                    <span><i data-id="${element.id}" class="fa-regular fa-heart like-icon"></i> 5 likes</span>
+                    <span class = "likes"><i data-id="${element.id}" class="fa-regular fa-thumbs-up like-icon"></i><p data-id = "${element.id}" class = "like-counter"></p></span>
                 </div>
                 <button id = ${element.id}>Comments</button>
             </li>
