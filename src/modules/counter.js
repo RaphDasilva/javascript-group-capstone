@@ -1,3 +1,3 @@
-const movieCounter = (item) => item.length;
+const movieCounter = (e) => e.length;
 
 export default movieCounter;
