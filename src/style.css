@@ -21,9 +21,7 @@ header {
   color: var(--black);
   padding: 20px;
 }
-main{
-  position: relative;
-}
+
 ul.container {
   display: flex;
   justify-content: center;
@@ -73,23 +71,40 @@ footer {
   bottom: 0;
   background-color: white;
   z-index: 2;
-
+  box-shadow: 2px;
+  max-width: 800px;
+  margin: auto;
+  box-shadow: 2px 2px 20000px var(--black);
+}
+.popup-section li{
+  background: none;
 }
 .close-btn{
   font-weight: 800;
-  font-size: 3rem;
+  font-size: 2.5rem;
   font-family: Arial, Helvetica, sans-serif;
   align-self: flex-end;
   text-align: right;
   right: 20px;
-  top: 20px;
+  top: 10px;
   position: absolute;
   cursor: pointer;
 }
 .movie-image{
   width: 80%;
   margin: auto;
+  object-fit: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.movie-image img{
+  width: 100%;
+  max-width: 200px;
+  height: 200px;
+  margin: auto;
+}
+
 ul.details{
   display: grid;
   grid-template-columns: auto auto;
@@ -101,6 +116,9 @@ ul.details{
   justify-content: center;
   padding: 10px;
 }
+ul{
+  margin-bottom: 20px;
+}
 .comments-list li{
   list-style-type: none;
   padding: 10px;
@@ -109,7 +127,10 @@ form{
   display: flex;
   flex-direction: column;
   gap: 20px;
+  align-items: left;
 }
 form *{
-  border: 2px solid var(--black)
+  border: 2px solid var(--black);
+  padding: 10px;
+  margin: 10px 0 0 0;
 }

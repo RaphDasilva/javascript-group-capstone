@@ -16,7 +16,7 @@ const createMovies = async () => {
     };
     moviesArr.push(movieObj);
   });
-  console.log(moviesArr);
+
   return moviesArr;
 };
 
