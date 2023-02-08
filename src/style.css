@@ -59,7 +59,8 @@ li {
 
 button {
   padding: 10px;
-  background-color: var(--milk-color);
+  background-color: var(--black);
+  color: var(--milk-color);
   border: none;
   font-size: 20px;
   border-radius: 8px;
