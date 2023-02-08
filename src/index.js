@@ -2,8 +2,8 @@ import './style.css';
 import showMovies from './modules/show-movies.js';
 import showLike from './modules/showLike.js';
 import AddLike from './modules/add-like.js';
-import { movieCount } from './modules/project-const';
-import movieCounter from './modules/counter';
+import { movieCount } from './modules/project-const.js';
+import movieCounter from './modules/counter.js';
 
 document.addEventListener('DOMContentLoaded', async () => {
   await showMovies();
