@@ -20,6 +20,7 @@ header {
   background-color: var(--ash-color);
   color: var(--black);
   padding: 20px;
+  margin-bottom: 50px;
 }
 
 ul.container {
@@ -46,6 +47,22 @@ img {
   justify-content: center;
   background-color: var(--red);
   padding: 20px;
+  width: 300px;
+  height: 550px;
+}
+
+.movie-name {
+  font-size: 30px;
+  font-weight: 400;
+  color: var(--black);
+}
+
+button {
+  padding: 10px;
+  background-color: var(--milk-color);
+  border: none;
+  font-size: 20px;
+  border-radius: 8px;
 }
 
 footer {
@@ -59,24 +76,13 @@ footer {
 
 /* POP-UP CSS */
 .popup-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  left: 10%;
-  right: 10%;
-  top: 0;
-  bottom: 0;
-  background-color: white;
-  z-index: 2;
-  max-width: 800px;
-  margin: auto;
-  box-shadow: 2px 2px 20000px var(--black);
+  width: 100%;
 }
-
 .popup-section li {
   background: none;
+  width: 40%;
+  max-width: 200px;
+  max-height: 50px;
 }
 
 .close-btn {
@@ -86,7 +92,7 @@ footer {
   align-self: flex-end;
   text-align: right;
   right: 20px;
-  top: 10px;
+  top: 70px;
   position: absolute;
   cursor: pointer;
 }
