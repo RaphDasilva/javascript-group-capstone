@@ -19,15 +19,18 @@ const showPopup = async (e) => {
         <section class="popup-section">
         <span class="close-btn">X</span>
         <div class="movie-image">
-        <img src="${movie.img}" alt="${movie.name}" width="200px">
+        <img src="${movie.img}" alt="${movie.name}">
         </div>
+        <div class = "info">
         <h2>${movie.name}</h2>
-        <ul class="details">
-            <li>${movie.language}</li>
-            <li>${movie.genres[0]}</li>
-            <li>${movie.genres[1]}</li>
-            <li>${movie.genres[2]}</li>
-        </ul>
+        <div class="details">
+            <div><h5>Language:</h5><p>${movie.language}</p></div>
+            <div><h5>Genres:<h5>
+            <p>${movie.genres[0]}</p>
+            <p>${movie.genres[1]}</p>
+            <p>${movie.genres[2]}</p>
+            </div>
+        </div>
         <ul class="comments-list">
             <h3>Comments(2)</h3>
             <li>Loved this!</li>
@@ -35,10 +38,11 @@ const showPopup = async (e) => {
         </ul>
         <h3>Add a comment</h3>
         <form>
-            <input type="text" name="" id="" placeholder="Your name">
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Insights"></textarea>
+            <input type="text" name="" id="" placeholder="Your name" class = "form-info">
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Insights" class = "form-info"></textarea>
             <button class="comment-btn">Comment</button>
         </form>
+      </div>  
     </section>
     `;
 
