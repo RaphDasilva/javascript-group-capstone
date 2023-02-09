@@ -2,8 +2,6 @@ import './style.css';
 import showMovies from './modules/show-movies.js';
 import showLike from './modules/showLike.js';
 import AddLike from './modules/add-like.js';
-import showPopup from './modules/popup';
-import showComments from './modules/show-comments';
 
 document.addEventListener('DOMContentLoaded', async () => {
   await showMovies();
@@ -12,9 +10,6 @@ document.addEventListener('DOMContentLoaded', async () => {
     await showLike(textLike);
   });
 });
-
-
-
 
 window.addEventListener('click', async (e) => {
   const likeBtn = e.target;
@@ -25,4 +20,3 @@ window.addEventListener('click', async (e) => {
     await showLike(textLike);
   }
 });
-
