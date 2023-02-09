@@ -1,21 +1,17 @@
 /* eslint-disable */
-
 import { popUpContainer, closeButtons } from './project-const.js';
 import createMovies from './display-movies.js';
 import showMovies from './show-movies.js';
 import { addComment, getComments } from './commentAPI.js';
-
 const showPopup = async (e) => {
   const movieId = e.target.id;
   popUpContainer.style.display = 'flex';
   popUpContainer.innerHTML = '';
   const movieArr = await createMovies();
   const movie = movieArr.find((m) => m.id === +movieId);
-
   if (!movie) {
     return;
   }
-
   popUpContainer.innerHTML += `
         <section class="popup-section">
         <span class="close-btn">X</span>
@@ -46,7 +42,6 @@ const showPopup = async (e) => {
       </div>  
     </section>
     `;
-
   for (let i = 0; i < closeButtons.length; i += 1) {
     closeButtons[i].onclick = showMovies;
   }
@@ -54,7 +49,6 @@ const showPopup = async (e) => {
   const inputMsg = document.querySelector('#message');
   const commentList = document.querySelector('.comments-list');
   const commentBtn = document.querySelector('.comment-btn');
-
   const commentFunction = async() => {
      const commentObj =  {
       item_id: movieId,
@@ -82,7 +76,6 @@ const showPopup = async (e) => {
     if(inputName.value === '' || inputMsg.value === '') return;
     commentFunction();
   });
-
  const commentLoader = async() => {
     const commentArr = await getComments(movieId);
       commentList.innerHTML = '';
@@ -98,5 +91,4 @@ const showPopup = async (e) => {
   }
   await commentLoader();
 };
-
 export default showPopup;
