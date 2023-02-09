@@ -28,18 +28,16 @@ const showPopup = async (e) => {
             <p>${movie.genres[2]}</p>
             </div>
         </div>
-        <h3>Comments(2)</h3>
+        <h3>Comments(<span id="comments-count"></span>)</h3>
         <ul class="comments-list">
-            
-            
         </ul>
         <h3>Add a comment</h3>
         <form>
-            <input type="text" name="" id="name" placeholder="Your name" class = "form-info">
+            <input type="text" name="username" id="name" placeholder="Your name" class = "form-info">
             <textarea name="message" id="message" cols="30" rows="10" placeholder="Your Insights" class = "form-info"></textarea>
             <button class="comment-btn">Comment</button>
         </form>
-      </div>  
+      </div>
     </section>
     `;
   for (let i = 0; i < closeButtons.length; i += 1) {
@@ -48,6 +46,7 @@ const showPopup = async (e) => {
   const inputName = document.querySelector('#name');
   const inputMsg = document.querySelector('#message');
   const commentList = document.querySelector('.comments-list');
+  const commentCount = document.querySelector('#comments-count');
   const commentBtn = document.querySelector('.comment-btn');
   const commentFunction = async() => {
      const commentObj =  {
@@ -65,7 +64,7 @@ const showPopup = async (e) => {
          <span> :${comm.username} :    </span>
          <span>  ${comm.comment}</span>
          </li>
-        ` 
+        `
       });
       inputName.value = '';
       inputMsg.value = '';
@@ -82,13 +81,16 @@ const showPopup = async (e) => {
       commentArr.forEach(comm => {
         commentList.innerHTML += `
          <li>
-         <span>  ${comm.creation_date} :   </span>
-         <span> :${comm.username} :    </span>
+         <span>  ${comm.username}  </span>
+         <span>  ${comm.creation_date}  </span>
          <span>  ${comm.comment}</span>
          </li>
-        ` 
+        `
+        commentCount.innerHTML = commentList.children.length;
+
       });
   }
   await commentLoader();
+  
 };
 export default showPopup;
