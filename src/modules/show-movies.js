@@ -1,9 +1,10 @@
 /* eslint-disable */
-import { movieContainer, displayButtons,} from './project-const.js';
+import { movieContainer, displayButtons, popUpContainer,} from './project-const.js';
 import createMovies from './display-movies.js';
 import showPopup from './popup.js';
 
 const showMovies = async () => {
+  popUpContainer.style.display = 'none';
   movieContainer.innerHTML = '';
   const movieArr = await createMovies();
   movieArr.forEach((element) => {
