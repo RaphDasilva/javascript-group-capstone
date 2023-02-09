@@ -75,9 +75,7 @@ footer {
 }
 
 /* POP-UP CSS */
-.popup-section {
-  width: 100%;
-}
+
 .close-btn {
   font-weight: 800;
   font-size: 2.5rem;
@@ -113,7 +111,7 @@ h2 {
   color: var(--black);
 }
 
-  .details {
+.details {
   display: flex;
   justify-content: space-between;
   width: 60%;
@@ -166,57 +164,6 @@ form {
   width: 20%;
   align-self: flex-end;
 }
-/* .popup-section li {
-  background: none;
-  width: 40%;
-  max-width: 200px;
-  max-height: 50px;
-}
-
-
-
-
-.movie-image img {
-  width: 100%;
-  max-width: 200px;
-  height: 200px;
-  margin: auto;
-}
-
-ul.details {
-  display: grid;
-  grid-template-columns: auto auto;
-  column-gap: 40px;
-}
-
-.details li {
-  list-style-type: none;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-}
-
-ul {
-  margin-bottom: 20px;
-}
-
-.comments-list li {
-  list-style-type: none;
-  padding: 10px;
-}
-
-form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  align-items: flex-start;
-}
-
-form * {
-  border: 2px solid var(--black);
-  padding: 10px;
-  margin: 10px 0 0 0;
-}*/
 
 .likes {
   display: flex;
@@ -282,7 +229,7 @@ form * {
     text-align: right;
     float: right;
     cursor: pointer;
-    margin: 10px 10px 0px 0px;
+    margin: 10px 10px 0 0;
   }
 
   .comment-btn {
