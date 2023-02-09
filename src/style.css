@@ -78,14 +78,6 @@ footer {
 .popup-section {
   width: 100%;
 }
-
-.popup-section li {
-  background: none;
-  width: 40%;
-  max-width: 200px;
-  max-height: 50px;
-}
-
 .close-btn {
   font-weight: 800;
   font-size: 2.5rem;
@@ -97,13 +89,92 @@ footer {
 }
 
 .movie-image {
-  width: 80%;
+  width: 250px;
+  height: auto;
   margin: 70px auto 0 auto;
   object-fit: contain;
   display: flex;
   align-items: center;
   justify-content: center;
 }
+
+.info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 900;
+  margin-top: 20px;
+  color: var(--black);
+}
+
+  .details {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin-bottom: 20px;
+}
+
+h5 {
+  font-size: 25px;
+  color: var(--black);
+}
+
+p {
+  font-size: 20px;
+  color: var(--black);
+}
+
+.comments-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 70%;
+}
+
+.comments-list li {
+  list-style: none;
+  background-color: var(--black);
+  color: var(--milk-color);
+  width: 100%;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.form-info {
+  padding: 20px;
+  border: 2px solid var(--black);
+  border-radius: 5px;
+}
+
+.comment-btn {
+  width: 20%;
+  align-self: flex-end;
+}
+/* .popup-section li {
+  background: none;
+  width: 40%;
+  max-width: 200px;
+  max-height: 50px;
+}
+
+
+
 
 .movie-image img {
   width: 100%;
@@ -145,7 +216,7 @@ form * {
   border: 2px solid var(--black);
   padding: 10px;
   margin: 10px 0 0 0;
-}
+}*/
 
 .likes {
   display: flex;
@@ -174,6 +245,48 @@ form * {
 .popup-section {
   width: 60vw;
   height: 70vh;
-  background-color: azure;
+  background-color: var(--milk-color);
   overflow-y: scroll;
+}
+
+@media (max-width: 768px) {
+  .details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 60%;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 900;
+    margin: 10px;
+    color: var(--black);
+    text-align: center;
+  }
+
+  .popup-section {
+    width: 90vw;
+    height: 70vh;
+    background-color: var(--milk-color);
+    overflow-y: scroll;
+  }
+
+  .close-btn {
+    font-weight: 800;
+    font-size: 2rem;
+    font-family: Arial, Helvetica, sans-serif;
+    align-self: flex-end;
+    text-align: right;
+    float: right;
+    cursor: pointer;
+    margin: 10px 10px 0px 0px;
+  }
+
+  .comment-btn {
+    width: 100%;
+    align-self: flex-end;
+  }
 }
