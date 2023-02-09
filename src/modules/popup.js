@@ -1,12 +1,13 @@
 /* eslint-disable */
 
-import { movieContainer, closeButtons } from './project-const.js';
+import { popUpContainer, closeButtons } from './project-const.js';
 import createMovies from './display-movies.js';
 import showMovies from './show-movies.js';
 
 const showPopup = async (e) => {
   const movieId = e.target.id;
-  movieContainer.innerHTML = '';
+  popUpContainer.style.display = 'flex';
+  popUpContainer.innerHTML = '';
   const movieArr = await createMovies();
   const movie = movieArr.find((m) => m.id === +movieId);
 
@@ -14,7 +15,7 @@ const showPopup = async (e) => {
     return;
   }
 
-  movieContainer.innerHTML += `
+  popUpContainer.innerHTML += `
         <section class="popup-section">
         <span class="close-btn">X</span>
         <div class="movie-image">
