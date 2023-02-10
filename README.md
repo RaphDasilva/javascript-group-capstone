@@ -58,7 +58,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://RaphDasilva.github.io/javascript-capstone-project/dist/)
+- [Live Demo Link](https://RaphDasilva.github.io/javascript-group-capstone/dist/)
 - [Video Demo Link](https://drive.google.com/file/d/1nKaeDv2c1YXV83o1uS712UKCQh1Trenu/view?usp=sharing)
 
 
