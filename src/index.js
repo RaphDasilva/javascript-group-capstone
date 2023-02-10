@@ -4,6 +4,7 @@ import showLike from './modules/showLike.js';
 import AddLike from './modules/add-like.js';
 import { movieCount } from './modules/project-const.js';
 import movieCounter from './modules/counter.js';
+// import commentCounter from './modules/commentcounter.js'
 
 document.addEventListener('DOMContentLoaded', async () => {
   await showMovies();
