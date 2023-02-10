@@ -10,7 +10,7 @@ const showMovies = async () => {
   movieArr.forEach((element) => {
     movieContainer.innerHTML += `
      <li class = "movie-${element.id} each-movie">
-                <img src="${element.img}" alt="${element.name}" width="200px">
+                <img class = "movie-img" src="${element.img}" alt="${element.name}" width="200px">
                 <div>
                     <p class="movie-name">${element.name}</p>
                     <span class = "likes"><i data-id="${element.id}" class="fa-regular fa-thumbs-up like-icon"></i><p data-id = "${element.id}" class = "like-counter"></p></span>
