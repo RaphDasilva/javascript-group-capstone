@@ -70,6 +70,11 @@ button {
   border-radius: 8px;
 }
 
+p {
+  font-size: 20px;
+  color: var(--black);
+}
+
 footer {
   background-color: var(--black);
   color: var(--milk-color);
@@ -103,9 +108,11 @@ footer p {
   align-items: center;
   justify-content: center;
 }
+
 .pop-img {
   width: 100%;
 }
+
 .info {
   display: flex;
   flex-direction: column;
@@ -130,11 +137,6 @@ h2 {
 
 h5 {
   font-size: 25px;
-  color: var(--black);
-}
-
-p {
-  font-size: 20px;
   color: var(--black);
 }
 
