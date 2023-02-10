@@ -3,7 +3,7 @@ import { popUpContainer, closeButtons } from './project-const.js';
 import createMovies from './display-movies.js';
 import showMovies from './show-movies.js';
 import { addComment, getComments } from './commentAPI.js';
-import {commentCounter} from './commentcounter.js'
+import commentCounter from './commentcounter.js'
 const showPopup = async (e) => {
   const movieId = e.target.id;
   popUpContainer.style.display = 'flex';
