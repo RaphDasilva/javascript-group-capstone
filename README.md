@@ -31,7 +31,7 @@
 
 # 📖 [Cinephilia Project] <a name="about-project"></a>
 
-> - In this project, I built a leaderboard game that consumes an Involvement API and a movie API.
+> - The Cinephilia Website is a dynamic platform for film lovers with a user-friendly interface, movie information from an API, and a community-driven experience through the ability to like and comment on movies..
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -58,7 +58,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://RaphDasilve.github.io/javascript-capstone-project/dist/)
+- [Live Demo Link](https://RaphDasilva.github.io/javascript-capstone-project/dist/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
