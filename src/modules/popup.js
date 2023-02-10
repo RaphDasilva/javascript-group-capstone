@@ -16,7 +16,7 @@ const showPopup = async (e) => {
         <section class="popup-section">
         <span class="close-btn">X</span>
         <div class="movie-image">
-        <img src="${movie.img}" alt="${movie.name}">
+        <img src="${movie.img}" alt="${movie.name}" class = "pop-img">
         </div>
         <div class = "info">
         <h2>${movie.name}</h2>
