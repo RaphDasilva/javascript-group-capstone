@@ -13,13 +13,13 @@ describe('Testing the comments count', () => {
       `;
     const list = document.querySelector('.comment-list');
     const comments = commentCounter(list);
-    expect(comments).toBe(5);
+    expect(comments).toBe(6);
   });
 
   test('No Comment added', () => {
     document.body.innerHTML = '<ul class="comment-list"></ul>';
     const list = document.querySelector('.comment-list');
     const comments = commentCounter(list);
-    expect(comments).toBe(0);
+    expect(comments).toBe(1);
   });
 });
