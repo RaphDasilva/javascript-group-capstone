@@ -73,6 +73,7 @@ const showPopup = async (e) => {
   
   commentBtn.addEventListener('click', (e) =>{
     e.preventDefault();
+    commentCount.innerHTML = commentCounter(commentList)
     if(inputName.value === '' || inputMsg.value === '') return;
     commentFunction();
   });
@@ -87,10 +88,10 @@ const showPopup = async (e) => {
          <span>  ${comm.comment}</span>
          </li>
         `
-        
-        commentCount.innerHTML = commentCounter(commentList)
+        commentCount.innerHTML = commentCounter(commentList) - 1;
 
       });
+
   }
   await commentLoader();
   
