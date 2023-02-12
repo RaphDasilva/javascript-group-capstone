@@ -84,7 +84,7 @@ const showPopup = async (e) => {
         commentList.innerHTML += `
          <li>
          <span>  ${comm.creation_date} :   </span>
-         <span> :${comm.username} :    </span>
+         <span> ${comm.username} :    </span>
          <span>  ${comm.comment}</span>
          </li>
         `
