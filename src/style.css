@@ -151,11 +151,19 @@ h5 {
 
 .comments-list li {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
   background-color: var(--black);
   color: var(--milk-color);
   width: 100%;
   padding: 20px;
   border-radius: 5px;
+}
+
+.comment-info {
+  display: flex;
+  justify-content: space-between;
 }
 
 form {
