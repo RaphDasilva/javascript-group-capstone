@@ -61,9 +61,9 @@ const showPopup = async (e) => {
       commentArr.forEach(comm => {
         commentList.innerHTML += `
          <li>
-         <span>  ${comm.creation_date} :   </span>
-         <span> :${comm.username} :    </span>
-         <span>  ${comm.comment}</span>
+         <span class = "date-of-comment">  ${comm.creation_date} :   </span>
+         <span class = "commentor"> :${comm.username} :    </span>
+         <span class = "persons-comment">  ${comm.comment}</span>
          </li>
         `
       });
@@ -83,8 +83,11 @@ const showPopup = async (e) => {
       commentArr.forEach(comm => {
         commentList.innerHTML += `
          <li>
-         <span>  ${comm.creation_date} :   </span>
-         <span> ${comm.username} :    </span>
+         <div class = "comment-info">
+         <span> <i class="fa-solid fa-user"></i> ${comm.username}   </span>
+         <span> <i class="fa-solid fa-calendar-check"></i> ${comm.creation_date}  </span>
+         </div>
+         <hr>
          <span>  ${comm.comment}</span>
          </li>
         `
