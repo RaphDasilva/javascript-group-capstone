@@ -164,6 +164,7 @@ h5 {
 .comment-info {
   display: flex;
   justify-content: space-between;
+  color: #8d8d8e;
 }
 
 form {
@@ -254,5 +255,11 @@ form {
   .comment-btn {
     width: 100%;
     align-self: flex-end;
+  }
+
+  .comment-info {
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
   }
 }
